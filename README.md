@@ -1,7 +1,20 @@
-# {{ workshop_name }} Workshop
-Welcome to the {{ workshop_name }} workshop of Coalesce {{ coalesce_year }}!
+# Coalesce 2023: Advanced Testing Workshop
+Welcome to the Advanced Testing workshop of Coalesce 2023!
 
-{{ workshop_intro }}
+You've been using dbt for a while, and are comfortable with the out-of-the-box dbt tests:
+- unique
+- not_null
+- accepted_values
+- relationships
+
+But... a part of you wonders if there's other tests you should be using. What are some best practices?
+dbt Community Slack... documentation... on-demand courses... blog posts... there's so many places and 
+such little time!
+
+Well, if you've decided to join us for this workshop - you've come to the right place.  
+We'll hold hands and walk through advanced testing concepts together. By the end of it you'll be an 
+expert at all the tools at your disposal and can rest easy knowing how to improve your data quality checks.
+
 
 **Prerequisites** 
 This workshop assumes that you're familiar with dbt and at a minimum know how to:
@@ -9,12 +22,10 @@ This workshop assumes that you're familiar with dbt and at a minimum know how to
 - Execute dbt commmands
 - Use git functionality
 - Write basic SQL
-- {{ update_prereqs }}
 
 It's a bonus if:
 - You understand languages like Jinja (templating) or Python (scripting) 
 - You've written some basic Jinja or Python statements in the past
-- {{ update_bonus_knowledge }}
 
 # Live Participant Setup Instructions
   
@@ -42,8 +53,6 @@ Verify that you're set up and ready to go once you have access to a project:
       3. Run `dbt deps` if needed to install dependencies (you'll be informed via the UI)
       4. Try running `dbt build` from the command bar at the bottom of the UI
 
-   {{ additional_information }}
-
 # Remote Participant Setup Instructions
 
 Before completing this workshop, there are some prerequisites that you'll need:
@@ -54,8 +63,8 @@ Before completing this workshop, there are some prerequisites that you'll need:
    This workshop is written using dbt Cloud, so a Cloud account is ideal. If using core,
    you'll need to pay attention to the differences to complete this workshop on your own.
   
-   Ideally, you'll also want to work with the dbt version this project was built with (dbt v{{ version }})
-   - [upgrade your dbt version](https://docs.getdbt.com/guides/migration/versions/upgrading-to-v1.3)
+   Ideally, you'll also want to work with the dbt version this project was built with (dbt v1.6)
+   - [upgrade your dbt version](https://docs.getdbt.com/guides/migration/versions/upgrading-to-v1.6)
 
    Resources:
    - [dbt Cloud Setup](https://docs.getdbt.com/guides/getting-started)
@@ -117,8 +126,6 @@ Before completing this workshop, there are some prerequisites that you'll need:
    2. Create a new branch named `coalesce_[first_initial][lastname]`. Example: `coalesce_cberger`
    3. Run `dbt deps` if needed to install dependencies (you'll be informed via the UI)
    4. Try running `dbt build` from the command bar at the bottom of the UI
-
-{{ additional_information }}
 
 # :tada: If you've made it this far, congratulations! You're ready to go. :tada:
 You're ready to start the workshop! There's nothing else to do until the workshop begins.
