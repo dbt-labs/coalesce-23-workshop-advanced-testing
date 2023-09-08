@@ -127,7 +127,7 @@ Before completing this workshop, there are some prerequisites that you'll need:
    3. Run `dbt deps` if needed to install dependencies (you'll be informed via the UI)
    4. Try running `dbt build` from the command bar at the bottom of the UI
 
-# :tada: If you've made it this far, congratulations! You're ready to go. :tada:
+# :tada: If you've made it this far, congratulations! :tada:
 You're ready to start the workshop! There's nothing else to do until the workshop begins.
 
 # Additional Helpful Links:
