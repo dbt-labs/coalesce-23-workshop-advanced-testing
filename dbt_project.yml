@@ -1,5 +1,5 @@
-name: 'coalesce_{{ year }}_{{ workshop_name }}'
-version: '{{ version_of_dbt_project_works_with }}'
+name: 'coalesce_2023_advanced_testing'
+version: '1.6.0'
 config-version: 2
 
 profile: 'snowflake_profile'
@@ -17,7 +17,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  {{ workshop_name }}:
+  coalesce_2023_advanced_testing:
     4_reports:
       +materialized: table
       finance:
