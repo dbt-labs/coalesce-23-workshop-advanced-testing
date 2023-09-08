@@ -1,0 +1,25 @@
+models:
+
+  - name: rpt_uk_lowcost_brass_suppliers
+    description: All suppliers in the UK which offer lowest cost options for brass parts.
+    columns:
+      - name: part_supplier_sk
+        tests:
+          - unique
+          - not_null
+
+  - name: rpt_uk_lowcost_brass_suppliers__size_15
+    description: All suppliers in the UK which offer lowest cost options for brass part size 15.
+    columns:
+      - name: part_supplier_sk
+        tests:
+          - unique
+          - not_null
+
+  - name: rpt_uk_lowest_cost_supplier_parts
+    description: All suppliers in the UK which offer lowest cost parts.
+    columns:
+      - name: part_supplier_sk
+        tests:
+          - unique
+          - not_null

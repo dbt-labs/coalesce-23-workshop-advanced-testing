@@ -1,0 +1,10 @@
+models:
+
+  - name: int_customer_orders
+    description: All customers with and without orders, and all orders with and without customers.
+    columns:
+      - name: customer_order_sk
+        description: A surrogate key to identify unique rows of customer + order
+        tests:
+          - unique
+          - not_null

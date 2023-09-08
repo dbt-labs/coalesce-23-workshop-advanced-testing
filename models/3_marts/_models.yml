@@ -1,0 +1,36 @@
+models:
+
+  - name: dim_customers
+    description: A data set of customers enriched with location information
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_customer_order_line_items
+    description: A data set of all orders with their line items and customer information
+    columns:
+      - name: customer_order_line_item_sk
+        description: >
+          A surrogate key which identifies unique order line items. Made from the order_id
+          and line number.
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: A data set of orders that are valid (having a real tie to a customer)
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_supplier_parts
+    description: A data set of all parts and their supplier information
+    columns:
+      - name: part_supplier_sk
+        tests:
+          - unique 
+          - not_null

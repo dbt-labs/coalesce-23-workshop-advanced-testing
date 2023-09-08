@@ -1,0 +1,33 @@
+models:
+
+  - name: rpt_client_purchase_status
+    description: Customer statuses based on return percentage
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: rpt_lost_revenue
+    description: Lost revenue by customer
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: rpt_monthly_return_revenue
+    description: Return revenue lost per month
+    columns:
+      - name: month
+        tests:
+          - unique
+          - not_null
+
+  - name: rpt_supplier_returns
+    description: Customer statuses based on return percentage
+    columns:
+      - name: part_supplier_month_sk
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,14 @@
+sources:
+  
+  - name: tpch
+    database: raw_tpch
+    schema: tpch_sf1
+    tables:
+      - name: partsupp
+      - name: nation
+      - name: region
+      - name: orders
+      - name: lineitem
+      - name: customer
+      - name: part
+      - name: supplier

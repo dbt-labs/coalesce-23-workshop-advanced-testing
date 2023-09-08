@@ -1,0 +1,38 @@
+name: 'coalesce_{{ year }}_{{ workshop_name }}'
+version: '{{ version_of_dbt_project_works_with }}'
+config-version: 2
+
+profile: 'snowflake_profile'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  {{ workshop_name }}:
+    4_reports:
+      +materialized: table
+      finance:
+        +docs:
+          node_color: "#7b2cbf"
+      product:
+        +docs:
+          node_color: "#ff7b00"
+        uk:
+          +docs:
+            node_color: "#ff9500"
+    3_marts:
+      +materialized: table
+      +docs:
+        node_color: "#4361ee"
+    2_intermediate:
+      +docs:
+        node_color: "#ffc300"
