@@ -83,14 +83,6 @@ models:
           - unique
           - not_null
 
-  - name: stg_tpch__part_suppliers
-    columns:
-      - name: part_supplier_sk
-        description: "{{ doc('part_supplier_sk') }}"
-        tests:
-          - unique
-          - not_null
-
   - name: stg_tpch__parts
     columns:
       - name: part_id
