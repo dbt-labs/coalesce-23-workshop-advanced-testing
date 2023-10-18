@@ -13,9 +13,6 @@ models:
       - name: part_supplier_available_qty
         tests:
           - not_null
- 
-  - name: stg_tpch__part_suppliers
-    columns:
       - name: part_supplier_available_qty
         tests:
           - not_null:
