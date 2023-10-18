@@ -13,3 +13,5 @@ cleaned as (
 )
 
 select * from cleaned
+union
+select null as region_id, null as region, null as region_comment
