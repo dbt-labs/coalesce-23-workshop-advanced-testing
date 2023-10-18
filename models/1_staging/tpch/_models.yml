@@ -1,8 +1,17 @@
 models:
+  - name: base_tpch__regions
+    description: >
+      This model cleans the regions data set, then gets joined to nations in the base_tpch__locations
+      model to produce a table which can easily enrich staging data sets.
+    columns:
+      - name: region_id
+        tests:
+          - not_null
+          - unique  
   - name: stg_tpch__part_suppliers
     columns:
-      - name: part_supplier_sk
-        description: "{{ doc('part_supplier_sk') }}"
+      - name: part_supplier_available_qty
         tests:
-          - unique
           - not_null
+
+          

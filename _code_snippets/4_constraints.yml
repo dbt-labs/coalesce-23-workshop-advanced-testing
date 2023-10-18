@@ -10,17 +10,17 @@
 #    Your file should look like the contents in 4_constraint_model.sql.
 # 4. Execute dbt build -s base_tpch__regions again to see the constraint
 #    in action!
-config:
-  contract: {'enforced': true}
-  materialized: table
-columns:
-  - name: region_id
-    data_type: string
-    constraints:
-      - type: not_null
-    tests:
-      - unique
-  - name: region
-    data_type: string
-  - name: region_comment
-    data_type: string
+    config:
+      contract: {'enforced': true}
+      materialized: table
+    columns:
+      - name: region_id
+        data_type: string
+        constraints:
+          - type: not_null
+        tests:
+          - unique
+      - name: region
+        data_type: string
+      - name: region_comment
+        data_type: string

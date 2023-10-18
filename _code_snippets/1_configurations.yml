@@ -3,15 +3,15 @@
 #   2. Under stg_tpch__part_supplier's columns configuration, add
 #      the following column and test definitions. Save.
 #   3. Execute dbt build -s stg_tpch__part_suppliers
-#   
-#   Your YML should look like the file 1_configurations_full_content.
-#   Specifically, lines 93-100.
 
-- name: part_supplier_available_qty
-  tests:
-    - not_null:
-        config:
-          severity: error
-          error_if: ">80"
-          warn_if: ">0"
-          where: "part_supplier_cost > 0"
+models:
+  - name: stg_tpch__part_suppliers
+    columns:
+      - name: part_supplier_available_qty
+        tests:
+          - not_null:
+              config:
+                severity: error
+                error_if: ">80"
+                warn_if: ">0"
+                where: "part_supplier_cost > 0"
