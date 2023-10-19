@@ -3,15 +3,34 @@ models:
     description: >
       This model cleans the regions data set, then gets joined to nations in the base_tpch__locations
       model to produce a table which can easily enrich staging data sets.
+    config:
+      contract: {'enforced': true}
+      materialized: table
     columns:
       - name: region_id
+        data_type: string
+        constraints:
+          - type: not_null
         tests:
-          - not_null
-          - unique  
+          - unique
+      - name: region
+        data_type: string
+      - name: region_comment
+        data_type: string  
   - name: stg_tpch__part_suppliers
     columns:
       - name: part_supplier_available_qty
         tests:
-          - not_null
-
+          - not_null:
+              config:
+                severity: error
+                error_if: ">80"
+                warn_if: ">0"
+                where: "part_supplier_cost > 0"
+  - name: stg_tpch__part
+    columns:
+        - name: part_name
+          tests:
+            - has_valid_value:
+                value: 'TEST'
           
