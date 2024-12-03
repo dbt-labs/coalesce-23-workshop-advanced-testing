@@ -1,3 +1,15 @@
+# ***Archival Notice***
+This repository has been archived.
+
+As a result all of its historical issues and PRs have been closed.
+
+Please *do not clone* this repo without understanding the risk in doing so:
+- It may have unaddressed security vulnerabilities
+- It may have unaddressed bugs
+
+<details>
+   <summary>Click for historical readme</summary>
+
 # Coalesce 2023: Advanced Testing Workshop
 Welcome to the Advanced Testing workshop of Coalesce 2023!
 
@@ -36,7 +48,7 @@ Verify that you're set up and ready to go once you have access to a project:
   
   1. Navigate to the dbt Cloud account
   2. Click the cog in the top right corner and go to **Profile Settings**
-  3. Click on **User Profile > Credentials** in the left sidebar
+  3. Click on **User Profile &gt; Credentials** in the left sidebar
   4. Click on the project name you want to set credentials for
   5. Click **Edit** in the bottom right corner of the pane that opens
   6. Configure your development credentials:
@@ -110,7 +122,7 @@ Before completing this workshop, there are some prerequisites that you'll need:
  **Verification if using this repository and dbt Cloud**
 1. Navigate to your dbt Cloud account
 2. Click the cog in the top right corner and go to **Profile Settings**
-3. Click on **User Profile > Credentials** in the left sidebar
+3. Click on **User Profile &gt; Credentials** in the left sidebar
 4. Click on the project name you want to set credentials for
 5. Click **Edit** in the bottom right corner of the pane that opens
 6. Configure your development credentials:
@@ -136,3 +148,4 @@ You're ready to start the workshop! There's nothing else to do until the worksho
 - Join the [dbt community](http://community.getbdt.com/) for more help and hang with other data practitioners
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
